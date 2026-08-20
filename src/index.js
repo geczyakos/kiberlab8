@@ -1,0 +1,15 @@
+export { hashPassword, verifyPassword } from './passwordHashing';
+export { validateRegistration } from './registrationValidator';
+export { generateSessionToken } from './sessionToken';
+export { getClaimsFromToken } from './utils/jwtVerification';
+export { createAttemptTracker } from './loginAttemptTracker';
+export { generateResetToken } from './passwordResetToken';
+export { applyProfileUpdate } from './utils/profileUpdate';
+export { generateVerificationCode } from './emailVerification';
+export { hasPermission } from './rolePermissionChecker';
+export { isStrictlyValidEmail } from './emailFormatValidator';
+export { shouldLockAccount } from './accountLockout';
+export { scoreStrength } from './passwordStrengthMeter';
+export { readAvatarFile } from './utils/avatarDownload';
+export { buildRememberMeCookie } from './rememberMeCookie';
+export { invalidateSession } from './logoutInvalidation';
