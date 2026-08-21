@@ -7,6 +7,9 @@ export function createAttemptTracker(maxAttempts = 5) {
       attempts.set(userId, count);
       return count;
     },
+    recordSuccess(userId) {
+      attempts.delete(userId);
+    },
     isLocked(userId) {
       return (attempts.get(userId) || 0) >= maxAttempts;
     },
